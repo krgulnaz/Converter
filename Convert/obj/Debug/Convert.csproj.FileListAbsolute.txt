@@ -1,0 +1,10 @@
+E:\Projects\TaskGitHub\Convert\Convert\Convert\bin\Debug\Convert.exe.config
+E:\Projects\TaskGitHub\Convert\Convert\Convert\bin\Debug\Convert.exe
+E:\Projects\TaskGitHub\Convert\Convert\Convert\bin\Debug\Convert.pdb
+E:\Projects\TaskGitHub\Convert\Convert\Convert\obj\Debug\Convert.csprojAssemblyReference.cache
+E:\Projects\TaskGitHub\Convert\Convert\Convert\obj\Debug\Convert.Form1.resources
+E:\Projects\TaskGitHub\Convert\Convert\Convert\obj\Debug\Convert.Properties.Resources.resources
+E:\Projects\TaskGitHub\Convert\Convert\Convert\obj\Debug\Convert.csproj.GenerateResource.cache
+E:\Projects\TaskGitHub\Convert\Convert\Convert\obj\Debug\Convert.csproj.CoreCompileInputs.cache
+E:\Projects\TaskGitHub\Convert\Convert\Convert\obj\Debug\Convert.exe
+E:\Projects\TaskGitHub\Convert\Convert\Convert\obj\Debug\Convert.pdb
