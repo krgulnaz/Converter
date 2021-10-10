@@ -24,10 +24,39 @@ namespace Convert
 
         private void convertButton_Click(object sender, EventArgs e)
         {
-            double price = System.Convert.ToDouble(priceTextBox.Text);
-            double rate = System.Convert.ToDouble(rateTextBox.Text);
-            double resultInUZS = price * rate;
-            resultLabel.Text =price.ToString("C")+ " USD ="+ resultInUZS.ToString() +" UZS";
+            try
+            {
+                double price = System.Convert.ToDouble(this.priceTextBox.Text);
+                double rate = System.Convert.ToDouble(this.rateTextBox.Text);
+                double resultInUZS = price * rate;
+                resultLabel.Text = price.ToString("C") + " USD =" + resultInUZS.ToString() + " UZS";
+            }
+            catch
+            {
+                if(this.priceTextBox.Text=="" || this.rateTextBox.Text == "")
+                {
+                    MessageBox.Show("You have to fill both fields", "Converter", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
+        }
+
+        private void priceTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !(Char.IsControl(e.KeyChar)))
+            {
+                if (!((e.KeyChar.ToString() == ",") &&(priceTextBox.Text.IndexOf(",")==-1)))
+                    e.Handled = true;
+            }
+        }
+
+        private void rateTextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && !(Char.IsControl(e.KeyChar)))
+            {
+                if (!((e.KeyChar.ToString() == ",") && (rateTextBox.Text.IndexOf(",") == -1)))
+                    e.Handled = true;
+            }
         }
     }
 }

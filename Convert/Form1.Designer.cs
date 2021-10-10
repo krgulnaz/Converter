@@ -73,6 +73,7 @@
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(138, 20);
             this.priceTextBox.TabIndex = 3;
+            this.priceTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.priceTextBox_KeyPress);
             // 
             // rateTextBox
             // 
@@ -80,6 +81,7 @@
             this.rateTextBox.Name = "rateTextBox";
             this.rateTextBox.Size = new System.Drawing.Size(138, 20);
             this.rateTextBox.TabIndex = 4;
+            this.rateTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rateTextBox_KeyPress);
             // 
             // resultLabel
             // 
